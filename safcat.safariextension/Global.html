@@ -14,6 +14,13 @@ function gfycatConvert(event) {
 
     // Current activeTab URL (ideally of the gif)
     var gifURL = safari.application.activeBrowserWindow.activeTab.url;
+
+    //get and check file extension
+    var extension = gifURL.substr(gifURL.lastIndexOf('.') + 1);
+    if (extension!="gif"){
+        return;
+    }
+
     // URL for JSON from gfycat
     // Current URL is URI encoded
     var gfycatSend = "http://upload.gfycat.com/transcode/" + makeID() + "?fetchUrl=" + encodeURIComponent(gifURL);
@@ -69,20 +76,22 @@ function getJSON(url) {
 }
 
 // This function is currently never hit. I want to make it only enable the button when there is a gif open in the activeTab. I have not given it much thought right now. Perhaps someone can help.
-function validateGif() {
-    var isGif = 0;
+function validateGif(event) {
+    var isGif = false;
     var currURL = safari.application.activeBrowserWindow.activeTab.url;
-    var lastFourChars = currURL.slice(currURL.length - 4, currURL.length);
+    var extension = currURL.substr(currURL.lastIndexOf('.') + 1);
     
-    console.log(lastFourChars);
+    console.log(extension);
 
-    if (lastFourChars == ".gif") 
-        isGif = 1;
+    if (extension == "gif") 
+        {
+            isGif = true;
+        }
 
     event.target.disabled = !isGif;
 }
 
 safari.application.addEventListener("command", gfycatConvert, false);
-// safari.application.addEventListener("validate", validateGif, false);
+safari.application.addEventListener("validate", validateGif, false);
 
 </script>
