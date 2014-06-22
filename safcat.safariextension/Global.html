@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<script type="text/javascript">
+
+function gfycatConvert(event) {
+    if (event.command !== "safcat")
+        return;
+
+    console.log(safari.application.activeBrowserWindow.activeTab.url);
+    var gifURL = safari.application.activeBrowserWindow.activeTab.url;
+    var gfycatSend = "http://upload.gfycat.com/transcode/" + makeID() + "?fetchUrl=" + encodeURIComponent(gifURL);
+
+    var res = getJSON(gfycatSend);
+    console.log(res);
+    var gfycatJSONParsed = JSON.parse(res);
+    var gfycatURL = "http://www.gfycat.com/" + gfycatJSONParsed.gfyname;
+    console.log(gfycatURL);
+    safari.application.activeBrowserWindow.activeTab.url = gfycatURL;
+}
+
+function makeID()
+{
+    var text = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+
+    for( var i = 0; i < 10; i++ )
+        text += possible.charAt(Math.floor(Math.random() * possible.length));
+
+    return text;
+}
+
+function getJSON(url) {
+    var res = '';
+    var xmlHttp = new XMLHttpRequest();
+
+    if(xmlHttp != null)
+    {
+        xmlHttp.open("GET", url, false);
+        xmlHttp.send(null);
+        res = xmlHttp.responseText;
+    }
+
+    return res;
+}
+
+safari.application.addEventListener("command", gfycatConvert, false);
+
+</script>
