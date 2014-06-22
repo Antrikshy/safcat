@@ -12,7 +12,9 @@ P.S. Does anyone know of a way to update this extension without having a web ser
 
 Download
 --------
-Download this code as .zip (from sidebar) and simply double-click the safcat.safariextz file to install.
+Download the extension file here: http://ge.tt/96Wxqnl1/v/0
+
+This is the same file as the one in this repository.
 
 Ways to contribute
 ------------------
