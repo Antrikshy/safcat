@@ -8,7 +8,11 @@ I have never done anything in JavaScript before and I am certainly new to writin
 
 I would appreciate any pointers, tips and improvements to this extension.
 
-P.S. Does anyone know of a way to update this extension without having a web server? Are there online services I can use? Currently, this extension does NOT have a way for me to update it. When I implement that feature, I will announce it on appropriate subreddits.
+P.S. Does anyone know of a way to update this extension without having a web server? Are there online services I can use? **Currently, this extension does NOT have a way for me to update it. When I implement that feature, I will announce it on appropriate subreddits.**
+
+Download
+--------
+Download this code as .zip (from sidebar) and simply double-click the safcat.safariextz file to install.
 
 Ways to contribute
 ------------------
