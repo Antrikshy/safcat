@@ -8,6 +8,8 @@ I have never done anything in JavaScript before and I am certainly new to writin
 
 I would appreciate any pointers, tips and improvements to this extension.
 
+Thanks to [DomT4](http://www.github.com/DomT4) for the toolbar artwork!
+
 Download
 --------
 Go to the 'release' tab near the top of this GitHub page. Download a copy of the current release. Unpack and double-click the .safariextz file to install. Disregard rest of the download.
