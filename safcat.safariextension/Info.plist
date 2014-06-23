@@ -58,6 +58,6 @@
 		</dict>
 	</dict>
 	<key>Update Manifest URL</key>
-	<string>https://raw.githubusercontent.com/Antrikshy/safcat/master/safcatUpdate.plist</string>
+	<string>https://rawgit.com/Antrikshy/safcat/master/safcatUpdate.plist</string>
 </dict>
 </plist>
