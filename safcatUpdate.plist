@@ -14,7 +14,7 @@
 			<key>CFBundleShortVersionString</key>
 			<string>1.2.0</string>
 			<key>URL</key>
-			<string>https://rawgit.com/Antrikshy/safcat/master/safcat.safariextz?raw=true</string>
+			<string>https://s3-us-west-1.amazonaws.com/antrikshyprojects/safcat.safariextz</string>
 		</dict>
 	</array>
 </dict>
