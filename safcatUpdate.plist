@@ -6,13 +6,13 @@
 	<array>
 		<dict>
 			<key>CFBundleIdentifier</key>
-			<string>com.Antrikshy.safari.safcat</string>
+			<string>com.Antrikshy.safcat</string>
 			<key>Developer Identifier</key>
 			<string>37LH9G9R9R</string>
 			<key>CFBundleVersion</key>
-			<string>1.1.3</string>
+			<string>1.2.0</string>
 			<key>CFBundleShortVersionString</key>
-			<string>1.1.3</string>
+			<string>1.2.0</string>
 			<key>URL</key>
 			<string>https://rawgit.com/Antrikshy/safcat/master/safcat.safariextz?raw=true</string>
 		</dict>
