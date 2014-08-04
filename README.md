@@ -1,5 +1,5 @@
 safcat
-=============
+======
 A simple Safari extension that uploads a gif open in the current tab to gfycat and plays it back on said site.
 
 While visiting a third-world country with very slow Internet, I was tired of uploading gifs manually to gfycat to view them smoothly and I saw that there was no such extension for Safari. **I made this extension to learn JavaScript, browser extensions, JSON parsing and the Safari extensions API.**
@@ -12,7 +12,7 @@ Thanks to [DomT4](http://www.github.com/DomT4) for the toolbar artwork!
 
 Download
 --------
-Go to the 'release' tab near the top of this GitHub page. Download a copy of the current release. Unpack and double-click the .safariextz file to install. Disregard rest of the download.
+Disregard the release page, use [this link](https://s3-us-west-1.amazonaws.com/antrikshyprojects/safcat.safariextz) instead. It will always be up to date and auto-updates can be pushed if I (or you) get ideas for new features.
 
 Ways to contribute
 ------------------
