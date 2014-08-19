@@ -19,6 +19,10 @@ Ways to contribute
 Clone the repository, fork it and create a pull request.
 We need to implement an async request to the gfycat.
 
+Report Issues
+-------------
+If you run into any problems with this extension, write in the Issues for this repo (in the right sidebar) or [message /u/Antrikshy](http://www.reddit.com/message/compose/?to=Antrikshy) on reddit.
+
 Changelog
 ---------
 See the 'release' tab near the top of this GitHub page.
